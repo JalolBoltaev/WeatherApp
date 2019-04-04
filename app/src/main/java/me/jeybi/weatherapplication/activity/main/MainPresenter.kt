@@ -11,6 +11,8 @@ import java.io.InputStream
 class MainPresenter(val view: MainMvp.view) : MainMvp.presenter {
 
 
+    //// Loading all information about 11 cities from local .json file in assets folder
+
     override fun loadJsonDataFromAssets(inputStream: InputStream) {
         var json: String? = null
         try {
@@ -27,8 +29,12 @@ class MainPresenter(val view: MainMvp.view) : MainMvp.presenter {
         parseCities(json!!)
     }
 
+    //// Parsing JSON into array of objects
+
     fun parseCities(json: String) {
+
         val citiesList = ArrayList<City>()
+        //// IDs of all cities together as 1 string in order to request GROUP FORECAST from openweathermap.com
         var longIdString = ""
 
         try {
