@@ -44,6 +44,8 @@ class CitiesAdapter(val context : Context,val cities : ArrayList<City>,val listO
             }
         }
 
+        /// SENDING DATA TO DETAILS ACTIVITY WHEN ITEM IS CLICKED
+
         holder.itemView.setOnClickListener {
             val intent = Intent(context,WeeklyForecastActivty::class.java)
             intent.putExtra("id",city.id)

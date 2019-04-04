@@ -18,6 +18,7 @@ import me.jeybi.weatherapplication.adapter.CitiesAdapter
 
 
 class MainActivity : BaseActivity(),MainMvp.view {
+
     override fun setLayoutId(): Int {
         return R.layout.activity_main
     }
@@ -27,9 +28,9 @@ class MainActivity : BaseActivity(),MainMvp.view {
 
     private val disposable = CompositeDisposable()
 
-
     override fun onViewDidCreate(savedInstanceState: Bundle?) {
         presenter = MainPresenter(this)
+        ///Firstly We have to load informations about 11 cities from local JSON file
         presenter.loadJsonDataFromAssets(assets.open("cities.json"))
     }
 
@@ -41,7 +42,7 @@ class MainActivity : BaseActivity(),MainMvp.view {
 
         val apiList = RetrofitClient.instance.create(ApiList::class.java)
 
-
+        /// Creating disposable in order to prevent crash when Activity is DEAD
       disposable.add(
               apiList.getCitiesData(longIdString,Constants.UNIT_METRIC,Constants.api_key)
                       .observeOn(AndroidSchedulers.mainThread())
@@ -55,4 +56,10 @@ class MainActivity : BaseActivity(),MainMvp.view {
 
     }
 
+    override fun onStop() {
+        super.onStop()
+
+        // UNSUBSCRIBE
+        disposable.dispose()
+    }
 }

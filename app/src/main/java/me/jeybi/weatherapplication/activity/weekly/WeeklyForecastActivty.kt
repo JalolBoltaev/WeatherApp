@@ -31,6 +31,9 @@ class WeeklyForecastActivty : BaseActivity() {
         bundle = intent.extras
         recyclerViewCities.layoutManager = LinearLayoutManager(this)
 
+
+        /// Getting data from previous activity
+
         if (bundle!=null){
             val id = bundle!!.getString("id")
             val color = bundle!!.getString("color")
@@ -46,6 +49,8 @@ class WeeklyForecastActivty : BaseActivity() {
             textViewTemperature.text ="${temp}°"
             textViewDesc.text = desc
 
+            // Based on the ID of the Weather, setting up the icons
+
             when(weather_id){
                 in 200 until 233 -> lottieWeather.setAnimation("thunder.json")
                 in 300 until 322 -> lottieWeather.setAnimation("drizzle.json")
@@ -59,6 +64,7 @@ class WeeklyForecastActivty : BaseActivity() {
 
             val apiList = RetrofitClient.instance.create(ApiList::class.java)
 
+            /// Creating disposable in order to prevent crash when subscribsion gets succeed when already activity is not alive
 
             disposable.add(
                     apiList.getCityWeeklyData(id!!, Constants.api_key ,7)
@@ -75,6 +81,11 @@ class WeeklyForecastActivty : BaseActivity() {
 
     }
 
+    override fun onStop() {
+        super.onStop()
 
+        //Unsubscribing the existing observable
+        disposable.dispose()
+    }
 
 }

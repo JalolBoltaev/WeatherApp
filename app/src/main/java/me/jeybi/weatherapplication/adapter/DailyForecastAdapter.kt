@@ -47,6 +47,7 @@ class DailyForecastAdapter(val context : Context, val listOfData : ArrayList<Who
 
     }
 
+
     private fun getDayName(position: Int): String {
         return when(position){
             0-> "Monday"
