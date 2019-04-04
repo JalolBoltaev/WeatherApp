@@ -1,1 +1,1 @@
-"# WeatherApp" 
+"Small application using OpenWeatherMap API" 
