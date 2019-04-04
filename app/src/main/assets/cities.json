@@ -1,4 +1,5 @@
 [
+
 		{"id":"1512569","name":"Tashkent","color":"#7BC478","image":"https://firebasestorage.googleapis.com/v0/b/easydelivery-40a6c.appspot.com/o/Group%20108.png?alt=media&token=27e1cbe8-0c85-495c-aa98-145511c1d157"},
 		{"id":"524901","name":"Moscow","color":"#F88686","image":"https://firebasestorage.googleapis.com/v0/b/easydelivery-40a6c.appspot.com/o/kremlin.png?alt=media&token=c64b3c7c-5025-41dd-9692-725b112646ea"},
 		{"id":"292223","name":"Dubai","color":"#F8D686","image":"https://firebasestorage.googleapis.com/v0/b/easydelivery-40a6c.appspot.com/o/Group%20109.png?alt=media&token=dbb978c0-5b1b-469f-85bb-ff6fcb98eefd"},
@@ -6,5 +7,10 @@
 		{"id":"4908066","name":"Rome","color":"#AF9688","image":"https://firebasestorage.googleapis.com/v0/b/easydelivery-40a6c.appspot.com/o/Group%20111.png?alt=media&token=03dcced7-550d-4a21-8723-159f7133e024"},
 		{"id":"360630","name":"Cairo","color":"#D28D66","image":"https://firebasestorage.googleapis.com/v0/b/easydelivery-40a6c.appspot.com/o/Group%20112.png?alt=media&token=c6591291-d900-4b83-9852-f0c009f3accb"},
 		{"id":"5128638","name":"New York","color":"#4CBC9E","image":"https://firebasestorage.googleapis.com/v0/b/easydelivery-40a6c.appspot.com/o/Group%20113.png?alt=media&token=5b74ca62-481b-42f1-aea0-d5c31ff47637"},
-		{"id":"6354908","name":"Sydney","color":"#5A8CD6","image":"https://firebasestorage.googleapis.com/v0/b/easydelivery-40a6c.appspot.com/o/sydney-opera-house.png?alt=media&token=a8ec8b15-e4f4-4d48-8a4d-6d4fb0b4ec2b"}
+		{"id":"6354908","name":"Sydney","color":"#5A8CD6","image":"https://firebasestorage.googleapis.com/v0/b/easydelivery-40a6c.appspot.com/o/sydney-opera-house.png?alt=media&token=a8ec8b15-e4f4-4d48-8a4d-6d4fb0b4ec2b"},
+		{"id":"2643743","name":"London","color":"#D28D66","image":"https://firebasestorage.googleapis.com/v0/b/easydelivery-40a6c.appspot.com/o/big-ben.png?alt=media&token=15284bf5-ce72-4998-81af-a8e5e2ac051f"},
+		{"id":"4254884","name":"Brazil","color":"#DFCB78","image":"https://firebasestorage.googleapis.com/v0/b/easydelivery-40a6c.appspot.com/o/christ-the-redeemer.png?alt=media&token=96159cb2-6d74-435f-bfcc-1419c6d858cd"},
+		{"id":"4254884","name":"Brazil","color":"#DFCB78","image":"https://firebasestorage.googleapis.com/v0/b/easydelivery-40a6c.appspot.com/o/christ-the-redeemer.png?alt=media&token=96159cb2-6d74-435f-bfcc-1419c6d858cd"},
+		{"id":"1835848","name":"Seoul","color":"#8298AB","image":"https://firebasestorage.googleapis.com/v0/b/easydelivery-40a6c.appspot.com/o/Group%20131.png?alt=media&token=4af04386-1c8a-417d-aa36-8c1203d75f7d"}
+
 ]
